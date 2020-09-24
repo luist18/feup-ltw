@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+    </head>
+    <body>
+        <!--
+            - Name (Text)
+            - Age (Radio buttons 18, 19-35, 36-48, > 49)
+            - Profession (Text)
+            - Country (Dropdown)
+            - Interests (Multiple select list)
+            - How did the user found out about the site (Text area)
+        -->
+
+        <form>
+            <fieldset>
+                <legend>Form</legend>
+
+                <label>
+                    Name:
+                    <input type="text" name="name" />
+                </label>
+
+                <br />
+
+                <label> Age: </label>
+
+                <label>
+                    <input type="radio" name="age" value="18" />
+                    18
+                </label>
+                <label>
+                    <input type="radio" name="age" value="19to35" />
+                    19-35
+                </label>
+                <label>
+                    <input type="radio" name="age" value="36to48" />
+                    36-48
+                </label>
+                <label>
+                    <input type="radio" name="age" value="gt49" />
+                    > 49
+                </label>
+
+                <br />
+
+                <label>
+                    Profession:
+                    <input type="text" name="profession" />
+                </label>
+
+                <br />
+
+                <label>
+                    Country:
+                    <select name="country">
+                        <option disabled selected value>
+                            Select a country
+                        </option>
+                        <optgroup label="Europe">
+                            <option value="portugal">Portugal</option>
+                            <option value="arroios">Arroios</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                            <option value="china">China</option>
+                            <option value="arroios">Arroios</option>
+                        </optgroup>
+                    </select>
+                </label>
+
+                <br />
+
+                <label> Interests: </label>
+
+                <div id="interests">
+                    <ul>
+                        <li>
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="sports"
+                                />Sports</label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="banter"
+                                />Banterrrrrrrrrrr</label
+                            >
+                        </li>
+                        <li>
+                            <label
+                                ><input
+                                    type="checkbox"
+                                    name="gaming"
+                                />Gaming</label
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <br />
+
+                <label> How did you find out this website? </label>
+
+                <br />
+
+                <textarea name="find-out" rows="10" cols="40"></textarea>
+
+                <br />
+
+                <input type="submit" />
+            </fieldset>
+        </form>
+    </body>
+</html>
