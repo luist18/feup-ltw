@@ -1,0 +1,68 @@
+:root {
+    --background: #edeff0;
+}
+
+body {
+    background-color: var(--background);
+
+    width: 60rem;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: auto 20%;
+    grid-template-rows: auto 4rem auto 3rem;
+    grid-template-areas:
+        'header header'
+        'nav aside'
+        'content aside'
+        'footer aside';
+}
+
+body > header {
+    grid-area: header;
+}
+
+body > nav {
+    grid-area: nav;
+}
+
+#related {
+    grid-area: aside;
+}
+
+#news {
+    grid-area: content;
+
+    margin: 1rem 1rem 1rem 0;
+}
+
+#news article {
+    display: flex;
+    flex-direction: column;
+}
+
+#register {
+    grid-area: content;
+}
+
+body > footer {
+    grid-area: footer;
+
+    margin-right: 1rem;
+}
+
+body > header #signup {
+    float: right;
+}
+
+body > nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+body > nav ul li {
+    flex: 1;
+}

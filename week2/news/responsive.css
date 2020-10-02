@@ -1,0 +1,141 @@
+@media screen and (max-width: 60rem) {
+    #related {
+        display: none;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #news {
+        margin: 0;
+    }
+
+    body > nav li a {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    body {
+        width: 100%;
+    }
+
+    body > header h2 {
+        display: none;
+    }
+
+    #news header {
+        background-color: white;
+    }
+
+    body > header #signup {
+        float: none;
+    }
+
+    body > nav {
+        position: relative;
+
+        background-color: var(--primary);
+    }
+
+    body > nav li {
+        border-width: 0 0 0 5px;
+
+        text-align: left;
+    }
+
+    body > nav li a {
+        font-size: 0.8rem;
+    }
+
+    body > nav ul {
+        background-color: #edeff0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body > nav input {
+        margin: 1rem;
+        opacity: 0;
+    }
+
+    body > nav label {
+        margin: 0;
+        top: 0.6rem;
+        left: 0.9rem;
+        position: absolute;
+    }
+
+    body > nav input:checked ~ ul li {
+        opacity: 1;
+    }
+
+    body > nav input + label:after {
+        color: gray;
+        content: '\2630';
+    }
+
+    body > nav input:checked + label:after {
+        content: '\2715';
+    }
+
+    body > nav input,
+    body > nav label {
+        display: block;
+    }
+
+    body > nav > ul li {
+        max-height: 0;
+        padding: 0 1rem;
+        opacity: 0;
+
+        transition: 0.35s ease-out;
+    }
+
+    body > nav > input:checked ~ ul li {
+        max-height: 3rem;
+        padding: 1rem;
+
+        display: block;
+
+        transition: 0.35s ease-in;
+    }
+
+    #news {
+        margin: 0;
+
+        width: 100%;
+    }
+
+    #news header {
+        position: static;
+
+        width: auto;
+    }
+
+    #news header a {
+        text-shadow: none;
+        color: black;
+    }
+
+    #register {
+        background-color: white;
+
+        width: 100%;
+
+        margin: 0 !important;
+
+        height: 100%;
+    }
+
+    body > footer {
+        margin-right: 0 !important;
+    }
+}

@@ -1,0 +1,78 @@
+#comments {
+    background-color: white;
+
+    padding: 1rem;
+}
+
+#comments h1 {
+    margin-bottom: 1rem;
+}
+
+#comments p {
+    background-color: #eee;
+
+    padding: 1rem;
+
+    margin: 1rem 0;
+}
+
+#comments p:before {
+    position: relative;
+    top: 0.5rem;
+    left: 0;
+
+    content: '\201C';
+
+    font-size: 2rem;
+
+    color: grey;
+}
+
+#comments p:first-of-type::first-letter {
+    font-size: inherit;
+}
+
+.comment {
+    display: inline !important;
+}
+
+.comment .user {
+    font-style: italic;
+}
+
+.comment .user:after {
+    content: ' said:';
+}
+
+.comment .date {
+    float: right;
+}
+
+form {
+    padding: 1rem 0;
+}
+
+form,
+form input {
+    background-color: #eee;
+}
+
+form textarea {
+    display: block;
+    width: 100%;
+
+    margin: 1rem 0;
+
+    height: 10rem;
+}
+
+form input[type='submit'] {
+    background-color: black;
+
+    outline: none;
+    border: none;
+
+    color: white;
+
+    padding: 1rem;
+}

@@ -1,0 +1,46 @@
+#register {
+    margin: 1rem auto;
+}
+
+#register h1 {
+    text-align: center;
+
+    padding: 1.5rem 0;
+}
+
+#register form {
+    background-color: white;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#register label {
+    display: block;
+}
+
+#register label:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#register label input {
+    display: block;
+
+    outline: none;
+    border: none;
+
+    background-color: inherit;
+
+    width: 15rem;
+
+    margin: 1rem 0 0 0;
+
+    border-bottom: solid black 1px;
+}
+
+#register input[type='submit'] {
+    width: min-content;
+    margin-left: auto;
+}

@@ -1,0 +1,129 @@
+/* Reset browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: 0;
+}
+
+a {
+    color: inherit;
+}
+
+/* END - Reset browser styling */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    width: 92.5%;
+    margin: auto;
+
+    background-image: url('https://web.fe.up.pt/~arestivo/page/img/exercises/css/stripe.png');
+}
+
+#header {
+    padding: 1rem;
+
+    background-color: black;
+
+    color: white;
+}
+
+#header h1 {
+    margin-bottom: 1rem;
+}
+
+#menu {
+    padding: 0.5rem;
+
+    background-color: #333;
+
+    color: black;
+
+    font-size: 0.8rem;
+}
+
+#menu ul {
+    padding: 0.3rem;
+}
+
+#menu ul li {
+    display: inline;
+
+    background-color: white;
+
+    padding: 0.2rem 1rem;
+}
+
+#menu ul li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#content {
+    background-color: white;
+
+    padding: 0.75rem;
+}
+
+.news-item {
+    width: 70%;
+}
+
+.news-item h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.news-item img {
+    float: right;
+
+    margin: 0 0rem 0.5rem 0.5rem;
+}
+
+.news-item p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news-item p.introduction {
+    font-style: italic;
+}
+
+.news-item p a {
+    color: blue;
+}
+
+.news-item ul {
+    margin: 1rem 0;
+
+    padding: 0.3rem 0;
+
+    background-color: #444;
+}
+
+.news-item ul li {
+    display: inline;
+
+    font-size: 0.85rem;
+
+    padding: 0.5rem 1rem;
+
+    color: white;
+}
+
+#footer {
+    padding: 0.2rem 1rem;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+#footer p {
+    margin-right: 30%;
+    display: block;
+    float: right;
+}
