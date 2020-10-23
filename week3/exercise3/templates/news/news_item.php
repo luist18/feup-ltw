@@ -23,8 +23,21 @@
                     <a href=\"edit_news.php?id={$_GET['id']}\">Edit</a>
                 ";
             }
+
+            $author = $article['name'];
+            
+            $published = date("d/m/Y H:i", substr($article['published'], 0, 10));
+            
+            $tags_raw = explode(',', $article['tags']);
+            
+            $tags = "";
+            
+            foreach ($tags_raw as $tag) {
+                $tags = $tags . "<a href=\"?tag=$tag\">#$tag</a>";
+            }
+
             echo "
-                <article class=\"news-item\">
+                <article class=\"new-item\">
                     <header>
                         <h1>
                             <a href=\"#\">{$article['title']}</a>
@@ -33,6 +46,13 @@
                     <p>
                         {$article['fulltext']}
                     </p>
+                    <footer>
+                        <span class=\"author\">$author</span>
+                        <span class=\"tags\">
+                            $tags
+                        </span>
+                        <span class=\"date\">$published</span>
+                    </footer>
                 </article>
             ";
             

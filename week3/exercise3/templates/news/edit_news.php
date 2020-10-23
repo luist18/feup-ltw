@@ -1,9 +1,3 @@
-<?php
-    if (!isset($_SESSION['username'])) {
-        header('Location: list_news.php');
-    }
-?>
-
 <section id="edit-news">
     <h2>Edit new</h2>
     <?php
@@ -17,6 +11,10 @@
             echo "
                 <div class=\"wrapper\">
                     <a class=\"new-page-link\" href=\"news_item.php?id={$new['id']}\">New page link</a>
+                    <form method=\"POST\" action=\"actions/action_delete_news.php\">
+                        <input name=\"id\" type=\"number\" hidden value=\"{$new['id']}\" />
+                        <input type=\"submit\" class=\"remove-new-link\" value=\"Remove new\"/>
+                    </form>
                 </div>
             ";
 

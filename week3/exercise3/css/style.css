@@ -159,8 +159,22 @@ body > footer {
     margin: 1.5rem 0;
 }
 
-#edit-form label {
+#edit-form label,
+#edit-form legend {
     font-weight: bold;
+}
+
+#edit-form fieldset legend {
+    margin-bottom: 0.25rem;
+}
+
+#edit-form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+#edit-form fieldset input {
+    margin-right: 0.25rem;
 }
 
 #edit-form input[type='text'] {
@@ -203,6 +217,18 @@ body > footer {
     display: block;
     margin-top: 0.5rem;
     font-weight: bold;
+}
+
+#edit-news .remove-new-link {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+
+    font-size: inherit;
+
+    color: red;
+
+    cursor: pointer;
 }
 
 .wrapper {
