@@ -25,7 +25,6 @@ form.addEventListener('submit', (e) => {
   inputQuantity.setAttribute('value', quantity)
 
   inputQuantity.onchange = (e) => {
-    inputQuantity.setAttribute('value', e.target.value)
     updateTotal()
   }
 
@@ -62,7 +61,7 @@ const getTotal = () => {
     if (tr.children.length === 3 && tr.children[1].tagName === 'TD') {
       const input = tr.children[1].children[0]
 
-      total += parseInt(input.attributes['value'].value)
+      total += parseInt(input.value)
     }
   })
 
@@ -70,6 +69,5 @@ const getTotal = () => {
 }
 
 const updateTotal = () => {
-  console.log('updated')
   document.getElementById('total').innerHTML = getTotal()
 }
