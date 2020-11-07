@@ -24,18 +24,16 @@ form.addEventListener('submit', (e) => {
   inputQuantity.setAttribute('type', 'number')
   inputQuantity.setAttribute('value', quantity)
 
-  inputQuantity.onchange = (e) => {
-    updateTotal()
-  }
+  inputQuantity.onchange = (e) => updateTotal()
+
+  inputQuantity.oninput = (e) => updateTotal()
 
   const inputRemove = document.createElement('input')
   inputRemove.setAttribute('type', 'button')
   inputRemove.setAttribute('value', 'Remove')
 
   inputRemove.onclick = (e) => {
-    e.preventDefault()
     tr.remove()
-
     updateTotal()
   }
 
